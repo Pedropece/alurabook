@@ -1,0 +1,72 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrosel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #eb9b00;
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002f52;
+    --fonte-secundario: "Josefin sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+#topBtn {
+    display: none;
+    /* O botão ficará escondido até que seja necessário */
+
+    position: fixed;
+    /* Fixa o botão em uma posição */
+
+    bottom: 20px;
+    /* Alinha o botão 20px do fundo da página */
+
+    right: 30px;
+    /* Alinha o botão 30px da direita da página */
+
+    z-index: 99;
+    /* Garante que o botão estará na frente de outros elementos */
+
+    font-size: 18px;
+    /* Define o tamanho do texto */
+
+    border: none;
+    /* Remove a borda do botão */
+
+    outline: none;
+    /* Remove o contorno do botão */
+
+    background-color: var(--laranja);
+    /* Cor de fundo do botão */
+
+    color: white;
+    /* Cor do texto do botão */
+    
+    cursor: pointer;
+    /* Altera o cursor para indicar clicável */
+
+    padding: 15px;
+    /* Espaçamento interno do botão */
+
+    border-radius: 4px;
+    /* Arredonda os cantos do botão */
+}
+
+#topBtn:hover {
+    background-color: var(--azul);
+    /* Altera a cor de fundo ao passar o cursor sobre o botão */
+}
